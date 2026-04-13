@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SneakLab — Premium Sneakers & Streetwear</title>
+  <meta name="description" content="Shop authentic sneakers, limited drops, and streetwear from SneakLab — India's premier sneaker destination." />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/187/187902.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">SNEAK<span>LAB</span></a>
+
+      <nav class="nav-links">
+        <a href="#whats-new">What's New</a>
+        <a href="#products">Sneakers</a>
+        <a href="#apparel">Apparel</a>
+        <a href="#brands">Brands</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="search-wrap">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input id="searchInput" type="text" placeholder="Search sneakers..." autocomplete="off" />
+        </div>
+        <button class="wishlist-btn" id="wishlistBtn" title="Wishlist">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="badge" id="wishlistBadge">0</span>
+        </button>
+        <button class="cart-btn" id="cartBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="badge" id="cartBadge">0</span>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="mobileMenu">
+      <a href="#whats-new">What's New</a>
+      <a href="#products">Sneakers</a>
+      <a href="#apparel">Apparel</a>
+      <a href="#brands">Brands</a>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="whats-new">
+    <div class="hero-bg-text">SNEAKERS</div>
+    <div class="hero-content">
+      <div class="hero-tag">New Season — SS 2025</div>
+      <h1 class="hero-title">
+        Authentic<br/>
+        <span class="accent-word">Kicks.</span><br/>
+        Unmatched<br/>
+        Culture.
+      </h1>
+      <p class="hero-sub">Curated limited drops & exclusive collabs — delivered across India.</p>
+      <div class="hero-ctas">
+        <button class="btn-primary" id="shopNow">Shop Now</button>
+        <button class="btn-ghost" id="viewDrops">Limited Drops</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span>500+</span> Styles</div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span>30+</span> Brands</div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span>100%</span> Authentic</div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-shoe-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700&q=80"
+          alt="Featured Sneaker"
+          class="hero-shoe"
+        />
+        <div class="hero-badge-float">LIMITED</div>
+        <div class="hero-price-float">From ₹1,999</div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== MARQUEE ===================== -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>NIKE</span><span>·</span>
+      <span>JORDAN</span><span>·</span>
+      <span>ADIDAS</span><span>·</span>
+      <span>NEW BALANCE</span><span>·</span>
+      <span>PUMA</span><span>·</span>
+      <span>CONVERSE</span><span>·</span>
+      <span>REEBOK</span><span>·</span>
+      <span>VANS</span><span>·</span>
+      <span>NIKE</span><span>·</span>
+      <span>JORDAN</span><span>·</span>
+      <span>ADIDAS</span><span>·</span>
+      <span>NEW BALANCE</span><span>·</span>
+      <span>PUMA</span><span>·</span>
+      <span>CONVERSE</span><span>·</span>
+      <span>REEBOK</span><span>·</span>
+      <span>VANS</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- ===================== FILTERS + PRODUCTS ===================== -->
+  <main class="main-content">
+    <div class="section-header" id="products">
+      <h2 class="section-title">All Drops</h2>
+      <div class="filter-controls">
+        <div class="filter-pills" id="catFilters">
+          <button class="pill active" data-cat="all">All</button>
+          <button class="pill" data-cat="high-tops">High Tops</button>
+          <button class="pill" data-cat="low-tops">Low Tops</button>
+          <button class="pill" data-cat="collab">Collabs</button>
+        </div>
+        <div class="filter-selects">
+          <select id="priceFilter" class="select-custom">
+            <option value="all">All Prices</option>
+            <option value="under-10000">Under ₹10,000</option>
+            <option value="10000-20000">₹10K – ₹20K</option>
+          </select>
+          <select id="brandFilter" class="select-custom">
+            <option value="all">All Brands</option>
+            <option value="Nike">Nike</option>
+            <option value="Jordan">Jordan</option>
+            <option value="Adidas">Adidas</option>
+            <option value="New Balance">New Balance</option>
+            <option value="Puma">Puma</option>
+            <option value="Converse">Converse</option>
+            <option value="Reebok">Reebok</option>
+            <option value="Vans">Vans</option>
+          </select>
+          <select id="sortFilter" class="select-custom">
+            <option value="default">Sort: Default</option>
+            <option value="price-asc">Price: Low → High</option>
+            <option value="price-desc">Price: High → Low</option>
+            <option value="name-asc">Name: A → Z</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="results-info">
+      <span id="resultsCount">30 products</span>
+    </div>
+
+    <div id="productGrid" class="product-grid"></div>
+
+    <div class="no-results hidden" id="noResults">
+      <div class="no-results-icon">👟</div>
+      <h3>No sneakers found</h3>
+      <p>Try different filters or search terms</p>
+      <button class="btn-primary" id="clearFilters">Clear Filters</button>
+    </div>
+  </main>
+
+  <!-- ===================== BRANDS SECTION ===================== -->
+  <section class="brands-section" id="brands">
+    <div class="brands-inner">
+      <h2 class="section-title light">Top Brands</h2>
+      <div class="brand-grid">
+        <div class="brand-card" data-brand="Nike">NIKE</div>
+        <div class="brand-card" data-brand="Jordan">JORDAN</div>
+        <div class="brand-card" data-brand="Adidas">ADIDAS</div>
+        <div class="brand-card" data-brand="New Balance">NEW BALANCE</div>
+        <div class="brand-card" data-brand="Puma">PUMA</div>
+        <div class="brand-card" data-brand="Converse">CONVERSE</div>
+        <div class="brand-card" data-brand="Reebok">REEBOK</div>
+        <div class="brand-card" data-brand="Vans">VANS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES STRIP ===================== -->
+  <section class="features-strip">
+    <div class="feature">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+      <div><strong>Free Delivery</strong><span>Orders above ₹2,000</span></div>
+    </div>
+    <div class="feature">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <div><strong>100% Authentic</strong><span>Verified genuine products</span></div>
+    </div>
+    <div class="feature">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.51"/></svg>
+      <div><strong>Easy Returns</strong><span>7-day hassle-free returns</span></div>
+    </div>
+    <div class="feature">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+      <div><strong>Secure Payments</strong><span>UPI, cards & more</span></div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="apparel">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo footer-logo">SNEAK<span>LAB</span></div>
+        <p>India's premier destination for authentic sneakers, limited drops, and streetwear culture.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links-group">
+        <h4>Shop</h4>
+        <a href="#">New Arrivals</a>
+        <a href="#">High Tops</a>
+        <a href="#">Low Tops</a>
+        <a href="#">Limited Drops</a>
+        <a href="#">Sale</a>
+      </div>
+      <div class="footer-links-group">
+        <h4>Help</h4>
+        <a href="#">Size Guide</a>
+        <a href="#">Authenticity Guarantee</a>
+        <a href="#">Shipping & Returns</a>
+        <a href="#">Track Order</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer-links-group">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 SneakLab. All rights reserved.</span>
+      <span>Made with ❤️ in India</span>
+      <span>sneaklab@gmail.com</span>
+    </div>
+  </footer>
+
+  <!-- ===================== PRODUCT MODAL ===================== -->
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-body">
+      <button id="closeModal" class="modal-close" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ===================== CART SIDEBAR ===================== -->
+  <div id="cartPanel" class="cart-panel" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <h2>Cart <span id="cartCount2">0</span></h2>
+      <button id="closeCart" class="modal-close" aria-label="Close Cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span>₹<strong id="cartTotal">0</strong></span>
+      </div>
+      <div class="cart-subtotal">
+        <span>Delivery</span>
+        <span id="deliveryNote">FREE (above ₹2K)</span>
+      </div>
+      <div class="cart-grand">
+        <span>Total</span>
+        <span>₹<strong id="cartGrand">0</strong></span>
+      </div>
+      <button id="checkoutBtn" class="btn-primary full-width">Proceed to Checkout →</button>
+      <button id="continueShopping" class="btn-ghost full-width">Continue Shopping</button>
+    </div>
+    <div class="cart-empty" id="cartEmpty">
+      <div>🛒</div>
+      <p>Your cart is empty</p>
+      <small>Add some heat to your cart</small>
+    </div>
+  </div>
+  <div class="cart-overlay hidden" id="cartOverlay"></div>
+
+  <!-- ===================== WISHLIST SIDEBAR ===================== -->
+  <div id="wishlistPanel" class="cart-panel wishlist-panel" aria-label="Wishlist">
+    <div class="cart-header">
+      <h2>Wishlist <span id="wishlistCount2">0</span></h2>
+      <button id="closeWishlist" class="modal-close" aria-label="Close Wishlist">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="wishlistItems" class="cart-items"></div>
+    <div class="cart-empty" id="wishlistEmpty">
+      <div>❤️</div>
+      <p>No saved items</p>
+      <small>Heart items you love</small>
+    </div>
+  </div>
+
+  <!-- ===================== TOAST ===================== -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
