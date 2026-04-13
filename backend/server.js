@@ -19,10 +19,6 @@ app.get("/api/health", (req, res) => {
   res.json({ status: "ok" });
 });
 
-app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend", "index.html"));
-});
-
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("✅ MongoDB Connected"))
   .catch((err) => console.error("❌ DB Error:", err));
